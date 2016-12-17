@@ -1,0 +1,276 @@
+---
+title: "597Project_ZhenzhenGe"
+author: "Zhenzhen Ge"
+date: "11/16/2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = F)
+library(tidyverse)
+library(gdata)
+library(rvest)
+library(stringr)
+library(shiny)
+```
+## Motivation:
+People have more freedom to choose where to live now. If you want to take a look at the living cost before you make the final decision on which international city you are going, that's what I can help with this project.
+
+## Step 1: Webscrape data from website
+I want to investigate into the living cost of famous international cities.  
+
+My final choices are 8 cities: Shanghai, NYC, Paris, London, Tokyo, Sydney, Vancouver, Dubai. So I found this useful website (https://www.numbeo.com) about all kinds of living cost, and I webscraped my desired data. Here are snippets of them.
+
+```{r,echo=FALSE}
+untidy_SH <- "https://www.numbeo.com/cost-of-living/in/Shanghai?displayCurrency=USD"
+untidy_SH <- untidy_SH %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[1:2]
+names(untidy_SH) <- c("Item","Shanghai")
+head(untidy_SH)
+
+untidy_NY <- "https://www.numbeo.com/cost-of-living/in/New-York"
+untidy_NY <- untidy_NY %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[2]
+names(untidy_NY) <- "NYC"
+head(untidy_NY)
+
+untidy_TK <- "https://www.numbeo.com/cost-of-living/in/Tokyo?displayCurrency=USD"
+untidy_TK <- untidy_TK %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[2]
+names(untidy_TK) <- "Tokyo"
+
+
+untidy_LD <- "https://www.numbeo.com/cost-of-living/in/London?displayCurrency=USD"
+untidy_LD <- untidy_LD %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[2]
+names(untidy_LD) <- "London"
+
+untidy_PR <- "https://www.numbeo.com/cost-of-living/in/Paris?displayCurrency=USD"
+untidy_PR <- untidy_PR %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[2]
+names(untidy_PR) <- "Paris"
+
+untidy_SN <- "https://www.numbeo.com/cost-of-living/in/Sydney?displayCurrency=USD"
+untidy_SN <- untidy_SN %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[2]
+names(untidy_SN) <- "Sydney"
+
+untidy_VC <- "https://www.numbeo.com/cost-of-living/in/Vancouver?displayCurrency=USD"
+untidy_VC <- untidy_VC %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[2]
+names(untidy_VC) <- "Vancouver"
+
+untidy_DB <- "https://www.numbeo.com/cost-of-living/in/Dubai?displayCurrency=USD"
+untidy_DB <- untidy_DB %>%
+  read_html() %>%
+  html_nodes("table") %>%
+  html_table(fill = TRUE, header = FALSE) %>%
+  .[[4]] %>%
+  .[2]
+names(untidy_DB) <- "Dubai"
+```
+
+## Step2: Combine all cities data and clean it
+I had to do some manual work to extract all the "Type" for those items and assign all "Item" to certain types since they are mixed in one column. It's necessary because I want to use "Type" later as an important level to demonstrate the "Item" data.  
+
+Besides, the data needs cleaning in several ways: the redundant "$" signs; the item names are too long so I decided to remove everything in parenthesis; trim all the unnecessary spaces; change data type from character to number.  
+
+And after all these, I found there're several "Item" names which are still too long, and this will affect my plot drawn in the future, so I decided to change them to shorter ones.  
+
+Then I stored my current data for future use.
+```{r,echo=TRUE}
+untidy_all <- cbind(untidy_SH, untidy_NY, untidy_TK, untidy_PR, untidy_LD, untidy_SN, untidy_VC, untidy_DB)
+head(untidy_all)
+
+untidy_all <- untidy_all %>%
+  mutate(Type="NA") %>%
+  select(1,10,2:9)
+untidy_all$Type[1:9] <- untidy_all[1,1]
+untidy_all$Type[10:29] <- untidy_all[10,1]
+untidy_all$Type[30:38] <- untidy_all[30,1]
+untidy_all$Type[39:42] <- untidy_all[39,1]
+untidy_all$Type[43:46] <- untidy_all[43,1]
+untidy_all$Type[47:51] <- untidy_all[47,1]
+untidy_all$Type[52:56] <- untidy_all[52,1]
+untidy_all$Type[57:59] <- untidy_all[57,1]
+untidy_all$Type[60:62] <- untidy_all[60,1]
+
+tidy_all <- untidy_all %>%
+  filter(Shanghai != "[ Edit ] Avg.")
+
+citytidy <- function(column){
+  column <- str_replace_all(column,"[,$]","")
+  column <- trim(column)
+  column <- as.numeric(column)
+}
+
+tidy_all[,3:10] <- sapply(tidy_all[,3:10], citytidy)
+tidy_all$Item <- str_replace_all(tidy_all$Item, "\\(.*\\)|,","")
+tidy_all$Item[46:49] <- c("Apartment in City Centre 1 bed","Apartment Outside of Centre 1 bed","Apartment in City Centre 3 beds","Apartment Outside of Centre 3 beds")
+tidy_all$Item[2] <- "Meal for 2 People"
+head(tidy_all)
+
+write.csv(tidy_all, "Data/tidy_all")
+```
+
+## Step3: Plots for comparisons
+Once I get my data tidy and clean, I want to get some information from it. Since I have 8 cities and I want to compare the prices, I guess barplot is appropriate to use here.  
+
+I want to see the a few "Type" to compare the 8 cities, the first is housing prices. 
+
+From the plots, NYC is quite high in rent and London is pretty high in buying, however, NYC also have highest disposable income.
+
+```{r,echo=FALSE}
+par(mfrow=c(2,2))
+apt1 <- as.vector(t(tidy_all[46,3:10]))
+barplot(apt1,main=tidy_all[46,1],col="light grey",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,3000),las=2)
+apt3 <- as.vector(t(tidy_all[48,3:10]))
+barplot(apt3,main=tidy_all[48,1],col="light blue",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,6000),las=2)
+buy <- as.vector(t(tidy_all[50,3:10]))
+barplot(buy,main=tidy_all[50,1],col="red",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,1800),las=2)
+salary <- as.vector(t(tidy_all[52,3:10]))
+barplot(salary,main=tidy_all[52,1],col="green",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,4000),las=2)
+```
+
+The next thing I want to see is food. It is surprising to see Shanghai has the highest milk price given that the quality in Chinese dairy product is not so good. Again it's relatively expensive to have meals in NYC even it's just McDonalds. 
+```{r,echo=FALSE}
+par(mfrow=c(2,2))
+meal <- as.vector(t(tidy_all[2,3:10]))
+barplot(meal,main=tidy_all[2,1],col="purple",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,80),las=2)
+mac <- as.vector(t(tidy_all[3,3:10]))
+barplot(mac,main=tidy_all[3,1],col="yellow",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,9),las=2)
+milk <- as.vector(t(tidy_all[9,3:10]))
+barplot(milk,main=tidy_all[9,1],col="light yellow",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,10),las=2)
+wine <- as.vector(t(tidy_all[24,3:10]))
+barplot(wine,main=tidy_all[24,1],col="green",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,20),las=2)
+```
+
+For transportation, I guess taking a cab in Tokyo may not be a good idea, and drving in Paris and London are expensive as well. Vancouver is relatively low in all transportation costs including buying a Golf.
+```{r,echo=FALSE}
+par(mfrow=c(2,2))
+bus <- as.vector(t(tidy_all[29,3:10]))
+barplot(bus,main=tidy_all[29,1],col="orange",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,170),las=2)
+taxi <- as.vector(t(tidy_all[30,3:10]))
+barplot(taxi,main=tidy_all[30,1],col="yellow",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,7),las=2)
+gas <- as.vector(t(tidy_all[33,3:10]))
+barplot(gas,main=tidy_all[33,1],col="black",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,6),las=2)
+vw <- as.vector(t(tidy_all[34,3:10]))
+barplot(vw,main=tidy_all[34,1],col="blue",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,23000),las=2)
+```
+
+For other items, for example the internet, movies, clothes and shoes, the cost for internet varies more than other items.
+```{r,echo=FALSE}
+par(mfrow=c(2,2))
+int <- as.vector(t(tidy_all[38,3:10]))
+barplot(int,main=tidy_all[38,1],col="gold",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,90),las=2)
+movie <- as.vector(t(tidy_all[41,3:10]))
+barplot(movie,main=tidy_all[41,1],col="pink",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,16),las=2)
+jeans <- as.vector(t(tidy_all[42,3:10]))
+barplot(jeans,main=tidy_all[42,1],col="blue",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,100),las=2)
+nike <- as.vector(t(tidy_all[44,3:10]))
+barplot(nike,main=tidy_all[44,1],col="grey",names.arg=colnames(tidy_all)[3:10],ylab="Price",ylim=c(0,110),las=2)
+```
+
+Since housing will take up most of our living cost, I want to focus on the housing price a little bit.
+  
+I use other two data sources to get historical housing prices in New York and Shanghai, and do my cleaning and tiding. Here's what I get afterwards.
+```{r,echo=FALSE}
+untidy_house_NY <- read.xls("./Data/New York Median House Prices.xlsx",header=T,stringsAsFactors = FALSE)
+untidy_house_NY$Nominal.Median <- as.numeric(str_replace_all(untidy_house_NY$Nominal.Median, "[$,]",""))
+untidy_house_NY$Real.House.Price <- as.numeric(str_replace_all(untidy_house_NY$Real.House.Price, "[$,]",""))
+
+tidy_house_NY <- unite(untidy_house_NY, Time, Year, Month,sep = ".")
+NY_nom.ts <- ts(tidy_house_NY$Nominal.Median, start = c(1986,12),frequency = 12)
+NY_real.ts <- ts(tidy_house_NY$Real.House.Price, start = c(1986,12),frequency = 12)
+
+untidy_house_SH <- read.csv("./Data/AnnualbySelectedCities.csv",header=T,skip=3,stringsAsFactors = FALSE)
+tidy_house_SH <- ts(t(rev(untidy_house_SH[11,2:17])),start = 1999,end = 2014,frequency = 1)
+
+head(tidy_house_SH)
+head(tidy_house_NY)
+```
+
+The I plot the price trend. Ignoring the currency and metric, I can see very similar trend here even though they are happening in two different places and two different decades.  
+
+Since Shanghai is having soaring prices in residential properties currently, maybe we can try to use other cities as reference to get some insight to predict the future price. 
+
+```{r,echo=FALSE}
+par(mfrow=c(2,1))
+plot(NY_nom.ts, xlim=c(1986,2015),ylim= c(100000,600000), main = "New York City Housing Price",type="l", ylab= "Price", col="Red")
+par(new=TRUE)
+plot(NY_real.ts, xlim=c(1986,2015),ylim= c(100000,600000), type="l", ylab= "Price",col="Green")
+legend("topleft", legend=c("Real Price","Nominal Price"), col = c("green","red"),lty=1,box.lty=0,cex = 0.6)
+plot(tidy_house_SH,xlim=c(1986,2015),main = "Shanghai Residential Housing Selling Price(yuan/sq.m)",type="l", ylab= "Price", col="Orange")
+
+```
+
+## Step4: prepare data to be more informative for a ShinyApp
+We've seen several plots, however, to get full picture of our dataset and make it easier to choose, we should use a more dynamic and interactive method. I decided to make ShinyApp for demonstration.  
+
+Before that, I want to add some statistical information to the original data and make my ShinyApp informative. What I do is to mark each item with the city which has the highest price on that item.  
+
+Then, to facilitate my plot or table in Shiny, I make some changes to the dataset to make it "tall" instead of "wide". Then I store this file as well.
+
+```{r,echo=FALSE}
+Highest <- function(line){
+  names(which.max(line))
+}
+
+Highest <- as.vector(apply(tidy_all[3:10],1,Highest))
+
+tidy_all_long <- tidy_all %>%
+  mutate(Highest = Highest) %>%
+  select(1:2,11,3:10) %>%
+  gather(key="City",value="Value",4:11)
+
+write.csv(tidy_all_long,"Data/tidy_all_long")
+```
+
+## Step5: ShinyApp
+I published my ShinyApp at: https://iamgzz.shinyapps.io/Demo/  
+
+In the left part of the website there are a few dropdown menu and buttons to choose from, which will affect the graphs and tables in the right.   
+
+Graph1: It gives general information about prices of certain type and certain city. It will only be affected by the "Type" and "City" choices in the left. We can see for each item in this "Type" how prices vary among cities. 
+
+Graph2: If you need a closer look at specific items among cities, you can choose from the left "Item" and "City" menu and see results here. So if you are particularly curious about something, say gasoline or cappuccino, you can choose accordingly and see the comparison among your target cities. 
+
+Graph3: If you got job offers from Paris, you want to check what kinds of stuff are most expensive in Paris, you can click "Paris" in the left under "Highest". Then you change your choices of "Type" to see in each type of cost which items are most expensive in Paris. Then you can decide whether you can afford living there.  
+ 
+Table: The table under graphs is simply complementary to graph3 to show the details. 
+
+
+## Summary:
+I want this project to be focused and straightforward, while still offer me great opportunity to practice what I learned in class. I had a lot of fun doing it, and I hope someone can find it's actually useful to decide where to live in the future!
+
+```{r,echo=FALSE,include=FALSE}
+#runApp("Demo")
+```

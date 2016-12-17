@@ -1,0 +1,425 @@
+"","Item","Type","Highest","City","Value"
+"1","Meal Inexpensive Restaurant","Restaurants","London","Shanghai",5.07
+"2","Meal for 2 People","Restaurants","NYC","Shanghai",28.98
+"3","McMeal at McDonalds ","Restaurants","Paris","Shanghai",4.35
+"4","Domestic Beer ","Restaurants","Dubai","Shanghai",2.17
+"5","Imported Beer ","Restaurants","Dubai","Shanghai",3.62
+"6","Cappuccino ","Restaurants","Dubai","Shanghai",4.13
+"7","Coke/Pepsi ","Restaurants","Paris","Shanghai",0.49
+"8","Water ","Restaurants","Paris","Shanghai",0.32
+"9","Milk ","Markets","Shanghai","Shanghai",9.37
+"10","Loaf of Fresh White Bread ","Markets","NYC","Shanghai",1.76
+"11","Rice ","Markets","NYC","Shanghai",0.4
+"12","Eggs ","Markets","NYC","Shanghai",1.82
+"13","Local Cheese ","Markets","Shanghai","Shanghai",10.34
+"14","Chicken Breasts ","Markets","Vancouver","Shanghai",1.92
+"15","Beef Round ","Markets","Paris","Shanghai",5.46
+"16","Apples ","Markets","Tokyo","Shanghai",0.8
+"17","Banana ","Markets","Tokyo","Shanghai",0.65
+"18","Oranges ","Markets","Tokyo","Shanghai",0.67
+"19","Tomato ","Markets","Tokyo","Shanghai",0.48
+"20","Potato ","Markets","Tokyo","Shanghai",0.46
+"21","Onion ","Markets","Tokyo","Shanghai",0.55
+"22","Lettuce ","Markets","Tokyo","Shanghai",1.18
+"23","Water ","Markets","NYC","Shanghai",0.55
+"24","Bottle of Wine ","Markets","Dubai","Shanghai",11.59
+"25","Domestic Beer ","Markets","Dubai","Shanghai",0.92
+"26","Imported Beer ","Markets","Dubai","Shanghai",2.71
+"27","Pack of Cigarettes ","Markets","Sydney","Shanghai",2.9
+"28","One-way Ticket ","Transportation","London","Shanghai",0.51
+"29","Monthly Pass ","Transportation","London","Shanghai",28.98
+"30","Taxi Start ","Transportation","Tokyo","Shanghai",2.03
+"31","Taxi 1 mile ","Transportation","London","Shanghai",0.68
+"32","Taxi 1hour Waiting ","Transportation","London","Shanghai",4.35
+"33","Gasoline ","Transportation","London","Shanghai",3.36
+"34","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","Shanghai",22457.75
+"35","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","Shanghai",23182.2
+"36","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","Shanghai",54.9
+"37","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","Shanghai",0.03
+"38","Internet ","Utilities (Monthly)","Dubai","Shanghai",17.26
+"39","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","Shanghai",45.69
+"40","Tennis Court Rent ","Sports And Leisure","NYC","Shanghai",11.29
+"41","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","Shanghai",10.87
+"42","1 Pair of Jeans ","Clothing And Shoes","Paris","Shanghai",90.64
+"43","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","Shanghai",41.82
+"44","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","Shanghai",103.17
+"45","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","Shanghai",117.19
+"46","Apartment in City Centre 1 bed","Rent Per Month","NYC","Shanghai",956.75
+"47","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","Shanghai",512.48
+"48","Apartment in City Centre 3 beds","Rent Per Month","NYC","Shanghai",2380.91
+"49","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","Shanghai",1144.62
+"50","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","Shanghai",1167.02
+"51","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","Shanghai",517.35
+"52","Average Monthly Disposable Salary ","Salaries And Financing","NYC","Shanghai",1370.62
+"53","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","Shanghai",5.23
+"54","Meal Inexpensive Restaurant","Restaurants","London","NYC",18
+"55","Meal for 2 People","Restaurants","NYC","NYC",78.8
+"56","McMeal at McDonalds ","Restaurants","Paris","NYC",8
+"57","Domestic Beer ","Restaurants","Dubai","NYC",6
+"58","Imported Beer ","Restaurants","Dubai","NYC",7
+"59","Cappuccino ","Restaurants","Dubai","NYC",4.25
+"60","Coke/Pepsi ","Restaurants","Paris","NYC",1.98
+"61","Water ","Restaurants","Paris","NYC",1.66
+"62","Milk ","Markets","Shanghai","NYC",4.18
+"63","Loaf of Fresh White Bread ","Markets","NYC","NYC",3.33
+"64","Rice ","Markets","NYC","NYC",2.78
+"65","Eggs ","Markets","NYC","NYC",3.61
+"66","Local Cheese ","Markets","Shanghai","NYC",5.62
+"67","Chicken Breasts ","Markets","Vancouver","NYC",5.16
+"68","Beef Round ","Markets","Paris","NYC",6.19
+"69","Apples ","Markets","Tokyo","NYC",2.52
+"70","Banana ","Markets","Tokyo","NYC",1.17
+"71","Oranges ","Markets","Tokyo","NYC",2.7
+"72","Tomato ","Markets","Tokyo","NYC",2.18
+"73","Potato ","Markets","Tokyo","NYC",1.5
+"74","Onion ","Markets","Tokyo","NYC",1.4
+"75","Lettuce ","Markets","Tokyo","NYC",2.18
+"76","Water ","Markets","NYC","NYC",2.28
+"77","Bottle of Wine ","Markets","Dubai","NYC",15.47
+"78","Domestic Beer ","Markets","Dubai","NYC",2.88
+"79","Imported Beer ","Markets","Dubai","NYC",3.41
+"80","Pack of Cigarettes ","Markets","Sydney","NYC",13
+"81","One-way Ticket ","Transportation","London","NYC",2.75
+"82","Monthly Pass ","Transportation","London","NYC",116.5
+"83","Taxi Start ","Transportation","Tokyo","NYC",2.5
+"84","Taxi 1 mile ","Transportation","London","NYC",2.7
+"85","Taxi 1hour Waiting ","Transportation","London","NYC",30
+"86","Gasoline ","Transportation","London","NYC",2.43
+"87","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","NYC",23000
+"88","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","NYC",20324.75
+"89","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","NYC",126.64
+"90","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","NYC",0.12
+"91","Internet ","Utilities (Monthly)","Dubai","NYC",53.21
+"92","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","NYC",73.89
+"93","Tennis Court Rent ","Sports And Leisure","NYC","NYC",33.6
+"94","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","NYC",15
+"95","1 Pair of Jeans ","Clothing And Shoes","Paris","NYC",52.82
+"96","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","NYC",39.37
+"97","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","NYC",85.71
+"98","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","NYC",117.65
+"99","Apartment in City Centre 1 bed","Rent Per Month","NYC","NYC",2919.05
+"100","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","NYC",1829.21
+"101","Apartment in City Centre 3 beds","Rent Per Month","NYC","NYC",5852.51
+"102","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","NYC",3266.5
+"103","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","NYC",1217.72
+"104","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","NYC",771.16
+"105","Average Monthly Disposable Salary ","Salaries And Financing","NYC","NYC",4052.7
+"106","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","NYC",3.97
+"107","Meal Inexpensive Restaurant","Restaurants","London","Tokyo",8.72
+"108","Meal for 2 People","Restaurants","NYC","Tokyo",43.58
+"109","McMeal at McDonalds ","Restaurants","Paris","Tokyo",6.06
+"110","Domestic Beer ","Restaurants","Dubai","Tokyo",3.49
+"111","Imported Beer ","Restaurants","Dubai","Tokyo",4.36
+"112","Cappuccino ","Restaurants","Dubai","Tokyo",3.47
+"113","Coke/Pepsi ","Restaurants","Paris","Tokyo",1.16
+"114","Water ","Restaurants","Paris","Tokyo",0.95
+"115","Milk ","Markets","Shanghai","Tokyo",6.58
+"116","Loaf of Fresh White Bread ","Markets","NYC","Tokyo",1.85
+"117","Rice ","Markets","NYC","Tokyo",2.08
+"118","Eggs ","Markets","NYC","Tokyo",2.11
+"119","Local Cheese ","Markets","Shanghai","Tokyo",8.5
+"120","Chicken Breasts ","Markets","Vancouver","Tokyo",3.34
+"121","Beef Round ","Markets","Paris","Tokyo",6.13
+"122","Apples ","Markets","Tokyo","Tokyo",2.71
+"123","Banana ","Markets","Tokyo","Tokyo",1.31
+"124","Oranges ","Markets","Tokyo","Tokyo",2.97
+"125","Tomato ","Markets","Tokyo","Tokyo",2.77
+"126","Potato ","Markets","Tokyo","Tokyo",1.58
+"127","Onion ","Markets","Tokyo","Tokyo",1.66
+"128","Lettuce ","Markets","Tokyo","Tokyo",2.19
+"129","Water ","Markets","NYC","Tokyo",1.3
+"130","Bottle of Wine ","Markets","Dubai","Tokyo",17.43
+"131","Domestic Beer ","Markets","Dubai","Tokyo",2.84
+"132","Imported Beer ","Markets","Dubai","Tokyo",3
+"133","Pack of Cigarettes ","Markets","Sydney","Tokyo",3.87
+"134","One-way Ticket ","Transportation","London","Tokyo",1.7
+"135","Monthly Pass ","Transportation","London","Tokyo",85.42
+"136","Taxi Start ","Transportation","Tokyo","Tokyo",6.36
+"137","Taxi 1 mile ","Transportation","London","Tokyo",5.05
+"138","Taxi 1hour Waiting ","Transportation","London","Tokyo",41.84
+"139","Gasoline ","Transportation","London","Tokyo",3.94
+"140","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","Tokyo",23005.42
+"141","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","Tokyo",22226.39
+"142","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","Tokyo",164.99
+"143","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","Tokyo",0.42
+"144","Internet ","Utilities (Monthly)","Dubai","Tokyo",33.79
+"145","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","Tokyo",88.57
+"146","Tennis Court Rent ","Sports And Leisure","NYC","Tokyo",21.46
+"147","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","Tokyo",15.69
+"148","1 Pair of Jeans ","Clothing And Shoes","Paris","Tokyo",63.32
+"149","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","Tokyo",35.63
+"150","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","Tokyo",75.36
+"151","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","Tokyo",119.48
+"152","Apartment in City Centre 1 bed","Rent Per Month","NYC","Tokyo",1141.63
+"153","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","Tokyo",694.81
+"154","Apartment in City Centre 3 beds","Rent Per Month","NYC","Tokyo",2861.2
+"155","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","Tokyo",1316.53
+"156","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","Tokyo",1348.7
+"157","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","Tokyo",631.61
+"158","Average Monthly Disposable Salary ","Salaries And Financing","NYC","Tokyo",2727.89
+"159","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","Tokyo",1.38
+"160","Meal Inexpensive Restaurant","Restaurants","London","Paris",13.74
+"161","Meal for 2 People","Restaurants","NYC","Paris",52.83
+"162","McMeal at McDonalds ","Restaurants","Paris","Paris",8.45
+"163","Domestic Beer ","Restaurants","Dubai","Paris",6.34
+"164","Imported Beer ","Restaurants","Dubai","Paris",6.34
+"165","Cappuccino ","Restaurants","Dubai","Paris",3.73
+"166","Coke/Pepsi ","Restaurants","Paris","Paris",3.29
+"167","Water ","Restaurants","Paris","Paris",2.3
+"168","Milk ","Markets","Shanghai","Paris",4.53
+"169","Loaf of Fresh White Bread ","Markets","NYC","Paris",1.24
+"170","Rice ","Markets","NYC","Paris",0.99
+"171","Eggs ","Markets","NYC","Paris",3.55
+"172","Local Cheese ","Markets","Shanghai","Paris",7.36
+"173","Chicken Breasts ","Markets","Vancouver","Paris",5.33
+"174","Beef Round ","Markets","Paris","Paris",9.44
+"175","Apples ","Markets","Tokyo","Paris",1.19
+"176","Banana ","Markets","Tokyo","Paris",0.94
+"177","Oranges ","Markets","Tokyo","Paris",1.18
+"178","Tomato ","Markets","Tokyo","Paris",1.34
+"179","Potato ","Markets","Tokyo","Paris",0.79
+"180","Onion ","Markets","Tokyo","Paris",0.98
+"181","Lettuce ","Markets","Tokyo","Paris",1.42
+"182","Water ","Markets","NYC","Paris",0.82
+"183","Bottle of Wine ","Markets","Dubai","Paris",6.34
+"184","Domestic Beer ","Markets","Dubai","Paris",1.88
+"185","Imported Beer ","Markets","Dubai","Paris",1.97
+"186","Pack of Cigarettes ","Markets","Sydney","Paris",7.4
+"187","One-way Ticket ","Transportation","London","Paris",1.9
+"188","Monthly Pass ","Transportation","London","Paris",73.96
+"189","Taxi Start ","Transportation","Tokyo","Paris",5.28
+"190","Taxi 1 mile ","Transportation","London","Paris",2.19
+"191","Taxi 1hour Waiting ","Transportation","London","Paris",36.98
+"192","Gasoline ","Transportation","London","Paris",5.2
+"193","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","Paris",21131.6
+"194","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","Paris",20251.11
+"195","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","Paris",172.74
+"196","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","Paris",0.14
+"197","Internet ","Utilities (Monthly)","Dubai","Paris",29.01
+"198","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","Paris",52.83
+"199","Tennis Court Rent ","Sports And Leisure","NYC","Paris",12.81
+"200","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","Paris",10.57
+"201","1 Pair of Jeans ","Clothing And Shoes","Paris","Paris",91.71
+"202","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","Paris",39.84
+"203","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","Paris",92.15
+"204","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","Paris",125.19
+"205","Apartment in City Centre 1 bed","Rent Per Month","NYC","Paris",1154.69
+"206","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","Paris",826.86
+"207","Apartment in City Centre 3 beds","Rent Per Month","NYC","Paris",2332.34
+"208","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","Paris",1593.67
+"209","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","Paris",921.75
+"210","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","Paris",567.98
+"211","Average Monthly Disposable Salary ","Salaries And Financing","NYC","Paris",2401.61
+"212","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","Paris",2.26
+"213","Meal Inexpensive Restaurant","Restaurants","London","London",18.88
+"214","Meal for 2 People","Restaurants","NYC","London",69.22
+"215","McMeal at McDonalds ","Restaurants","Paris","London",6.29
+"216","Domestic Beer ","Restaurants","Dubai","London",5.66
+"217","Imported Beer ","Restaurants","Dubai","London",5.03
+"218","Cappuccino ","Restaurants","Dubai","London",3.29
+"219","Coke/Pepsi ","Restaurants","Paris","London",1.51
+"220","Water ","Restaurants","Paris","London",1.21
+"221","Milk ","Markets","Shanghai","London",4.31
+"222","Loaf of Fresh White Bread ","Markets","NYC","London",1.16
+"223","Rice ","Markets","NYC","London",0.82
+"224","Eggs ","Markets","NYC","London",2.73
+"225","Local Cheese ","Markets","Shanghai","London",3.43
+"226","Chicken Breasts ","Markets","Vancouver","London",3.77
+"227","Beef Round ","Markets","Paris","London",4.94
+"228","Apples ","Markets","Tokyo","London",1.13
+"229","Banana ","Markets","Tokyo","London",0.58
+"230","Oranges ","Markets","Tokyo","London",1.12
+"231","Tomato ","Markets","Tokyo","London",1.12
+"232","Potato ","Markets","Tokyo","London",0.69
+"233","Onion ","Markets","Tokyo","London",0.62
+"234","Lettuce ","Markets","Tokyo","London",0.92
+"235","Water ","Markets","NYC","London",1.11
+"236","Bottle of Wine ","Markets","Dubai","London",10.07
+"237","Domestic Beer ","Markets","Dubai","London",2.18
+"238","Imported Beer ","Markets","Dubai","London",2.39
+"239","Pack of Cigarettes ","Markets","Sydney","London",11.96
+"240","One-way Ticket ","Transportation","London","London",3.15
+"241","Monthly Pass ","Transportation","London","London",163.61
+"242","Taxi Start ","Transportation","Tokyo","London",3.96
+"243","Taxi 1 mile ","Transportation","London","London",8.08
+"244","Taxi 1hour Waiting ","Transportation","London","London",60.54
+"245","Gasoline ","Transportation","London","London",5.29
+"246","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","London",22654.19
+"247","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","London",22847.82
+"248","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","London",187.96
+"249","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","London",0.22
+"250","Internet ","Utilities (Monthly)","Dubai","London",31.09
+"251","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","London",60.62
+"252","Tennis Court Rent ","Sports And Leisure","NYC","London",14.41
+"253","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","London",15.1
+"254","1 Pair of Jeans ","Clothing And Shoes","Paris","London",80.11
+"255","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","London",39.69
+"256","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","London",81.55
+"257","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","London",96.65
+"258","Apartment in City Centre 1 bed","Rent Per Month","NYC","London",2124.45
+"259","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","London",1460.6
+"260","Apartment in City Centre 3 beds","Rent Per Month","NYC","London",3995.48
+"261","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","London",2456.38
+"262","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","London",1776.75
+"263","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","London",921.2
+"264","Average Monthly Disposable Salary ","Salaries And Financing","NYC","London",2618.77
+"265","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","London",3.32
+"266","Meal Inexpensive Restaurant","Restaurants","London","Sydney",11.21
+"267","Meal for 2 People","Restaurants","NYC","Sydney",59.77
+"268","McMeal at McDonalds ","Restaurants","Paris","Sydney",7.47
+"269","Domestic Beer ","Restaurants","Dubai","Sydney",5.3
+"270","Imported Beer ","Restaurants","Dubai","Sydney",5.98
+"271","Cappuccino ","Restaurants","Dubai","Sydney",2.81
+"272","Coke/Pepsi ","Restaurants","Paris","Sydney",2.33
+"273","Water ","Restaurants","Paris","Sydney",1.92
+"274","Milk ","Markets","Shanghai","Sydney",4.34
+"275","Loaf of Fresh White Bread ","Markets","NYC","Sydney",1.95
+"276","Rice ","Markets","NYC","Sydney",0.96
+"277","Eggs ","Markets","NYC","Sydney",3.59
+"278","Local Cheese ","Markets","Shanghai","Sydney",3.46
+"279","Chicken Breasts ","Markets","Vancouver","Sydney",3.75
+"280","Beef Round ","Markets","Paris","Sydney",5.3
+"281","Apples ","Markets","Tokyo","Sydney",1.35
+"282","Banana ","Markets","Tokyo","Sydney",0.98
+"283","Oranges ","Markets","Tokyo","Sydney",1.08
+"284","Tomato ","Markets","Tokyo","Sydney",1.54
+"285","Potato ","Markets","Tokyo","Sydney",0.9
+"286","Onion ","Markets","Tokyo","Sydney",0.86
+"287","Lettuce ","Markets","Tokyo","Sydney",1.93
+"288","Water ","Markets","NYC","Sydney",1.83
+"289","Bottle of Wine ","Markets","Dubai","Sydney",13.45
+"290","Domestic Beer ","Markets","Dubai","Sydney",4.24
+"291","Imported Beer ","Markets","Dubai","Sydney",4.31
+"292","Pack of Cigarettes ","Markets","Sydney","Sydney",18.68
+"293","One-way Ticket ","Transportation","London","Sydney",2.99
+"294","Monthly Pass ","Transportation","London","Sydney",119.54
+"295","Taxi Start ","Transportation","Tokyo","Sydney",2.69
+"296","Taxi 1 mile ","Transportation","London","Sydney",3.01
+"297","Taxi 1hour Waiting ","Transportation","London","Sydney",42.14
+"298","Gasoline ","Transportation","London","Sydney",3.57
+"299","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","Sydney",18677.79
+"300","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","Sydney",17755.71
+"301","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","Sydney",126.53
+"302","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","Sydney",0.61
+"303","Internet ","Utilities (Monthly)","Dubai","Sydney",49.05
+"304","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","Sydney",54.96
+"305","Tennis Court Rent ","Sports And Leisure","NYC","Sydney",16.56
+"306","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","Sydney",14.94
+"307","1 Pair of Jeans ","Clothing And Shoes","Paris","Sydney",77.33
+"308","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","Sydney",50.66
+"309","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","Sydney",105.72
+"310","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","Sydney",114.97
+"311","Apartment in City Centre 1 bed","Rent Per Month","NYC","Sydney",1909.3
+"312","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","Sydney",1306.04
+"313","Apartment in City Centre 3 beds","Rent Per Month","NYC","Sydney",3537.09
+"314","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","Sydney",2232.21
+"315","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","Sydney",873.52
+"316","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","Sydney",602
+"317","Average Monthly Disposable Salary ","Salaries And Financing","NYC","Sydney",3363.49
+"318","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","Sydney",4.59
+"319","Meal Inexpensive Restaurant","Restaurants","London","Vancouver",11.38
+"320","Meal for 2 People","Restaurants","NYC","Vancouver",49.29
+"321","McMeal at McDonalds ","Restaurants","Paris","Vancouver",6.83
+"322","Domestic Beer ","Restaurants","Dubai","Vancouver",4.55
+"323","Imported Beer ","Restaurants","Dubai","Vancouver",5.31
+"324","Cappuccino ","Restaurants","Dubai","Vancouver",3.12
+"325","Coke/Pepsi ","Restaurants","Paris","Vancouver",1.43
+"326","Water ","Restaurants","Paris","Vancouver",1.33
+"327","Milk ","Markets","Shanghai","Vancouver",7.31
+"328","Loaf of Fresh White Bread ","Markets","NYC","Vancouver",2.07
+"329","Rice ","Markets","NYC","Vancouver",1.25
+"330","Eggs ","Markets","NYC","Vancouver",3.02
+"331","Local Cheese ","Markets","Shanghai","Vancouver",4.58
+"332","Chicken Breasts ","Markets","Vancouver","Vancouver",5.44
+"333","Beef Round ","Markets","Paris","Vancouver",4.81
+"334","Apples ","Markets","Tokyo","Vancouver",1.42
+"335","Banana ","Markets","Tokyo","Vancouver",0.61
+"336","Oranges ","Markets","Tokyo","Vancouver",1.4
+"337","Tomato ","Markets","Tokyo","Vancouver",1.36
+"338","Potato ","Markets","Tokyo","Vancouver",1.14
+"339","Onion ","Markets","Tokyo","Vancouver",0.89
+"340","Lettuce ","Markets","Tokyo","Vancouver",1.76
+"341","Water ","Markets","NYC","Vancouver",1.79
+"342","Bottle of Wine ","Markets","Dubai","Vancouver",13.65
+"343","Domestic Beer ","Markets","Dubai","Vancouver",2.94
+"344","Imported Beer ","Markets","Dubai","Vancouver",2.89
+"345","Pack of Cigarettes ","Markets","Sydney","Vancouver",9.29
+"346","One-way Ticket ","Transportation","London","Vancouver",2.09
+"347","Monthly Pass ","Transportation","London","Vancouver",69.39
+"348","Taxi Start ","Transportation","Tokyo","Vancouver",2.65
+"349","Taxi 1 mile ","Transportation","London","Vancouver",2.25
+"350","Taxi 1hour Waiting ","Transportation","London","Vancouver",24.95
+"351","Gasoline ","Transportation","London","Vancouver",3.46
+"352","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","Vancouver",15925.54
+"353","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","Vancouver",15054.05
+"354","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","Vancouver",54.34
+"355","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","Vancouver",0.24
+"356","Internet ","Utilities (Monthly)","Dubai","Vancouver",45.07
+"357","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","Vancouver",33.97
+"358","Tennis Court Rent ","Sports And Leisure","NYC","Vancouver",13.89
+"359","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","Vancouver",9.86
+"360","1 Pair of Jeans ","Clothing And Shoes","Paris","Vancouver",55.31
+"361","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","Vancouver",38.97
+"362","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","Vancouver",86.2
+"363","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","Vancouver",99.1
+"364","Apartment in City Centre 1 bed","Rent Per Month","NYC","Vancouver",1241.12
+"365","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","Vancouver",920.55
+"366","Apartment in City Centre 3 beds","Rent Per Month","NYC","Vancouver",2486.13
+"367","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","Vancouver",1744.9
+"368","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","Vancouver",648.71
+"369","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","Vancouver",403.88
+"370","Average Monthly Disposable Salary ","Salaries And Financing","NYC","Vancouver",2192
+"371","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","Vancouver",2.8
+"372","Meal Inexpensive Restaurant","Restaurants","London","Dubai",8.17
+"373","Meal for 2 People","Restaurants","NYC","Dubai",40.84
+"374","McMeal at McDonalds ","Restaurants","Paris","Dubai",6.81
+"375","Domestic Beer ","Restaurants","Dubai","Dubai",10.89
+"376","Imported Beer ","Restaurants","Dubai","Dubai",10.89
+"377","Cappuccino ","Restaurants","Dubai","Dubai",4.5
+"378","Coke/Pepsi ","Restaurants","Paris","Dubai",0.46
+"379","Water ","Restaurants","Paris","Dubai",0.32
+"380","Milk ","Markets","Shanghai","Dubai",5.78
+"381","Loaf of Fresh White Bread ","Markets","NYC","Dubai",1.19
+"382","Rice ","Markets","NYC","Dubai",1.08
+"383","Eggs ","Markets","NYC","Dubai",2.95
+"384","Local Cheese ","Markets","Shanghai","Dubai",3.8
+"385","Chicken Breasts ","Markets","Vancouver","Dubai",3.05
+"386","Beef Round ","Markets","Paris","Dubai",4.45
+"387","Apples ","Markets","Tokyo","Dubai",1.08
+"388","Banana ","Markets","Tokyo","Dubai",0.87
+"389","Oranges ","Markets","Tokyo","Dubai",0.92
+"390","Tomato ","Markets","Tokyo","Dubai",0.8
+"391","Potato ","Markets","Tokyo","Dubai",0.52
+"392","Onion ","Markets","Tokyo","Dubai",0.47
+"393","Lettuce ","Markets","Tokyo","Dubai",1.82
+"394","Water ","Markets","NYC","Dubai",0.59
+"395","Bottle of Wine ","Markets","Dubai","Dubai",19.06
+"396","Domestic Beer ","Markets","Dubai","Dubai",9.1
+"397","Imported Beer ","Markets","Dubai","Dubai",9.93
+"398","Pack of Cigarettes ","Markets","Sydney","Dubai",2.72
+"399","One-way Ticket ","Transportation","London","Dubai",1.36
+"400","Monthly Pass ","Transportation","London","Dubai",68.07
+"401","Taxi Start ","Transportation","Tokyo","Dubai",3.27
+"402","Taxi 1 mile ","Transportation","London","Dubai",0.88
+"403","Taxi 1hour Waiting ","Transportation","London","Dubai",8.17
+"404","Gasoline ","Transportation","London","Dubai",1.77
+"405","Volkswagen Golf 1.4 90 KW Trendline ","Transportation","Tokyo","Dubai",20419.8
+"406","Toyota Corolla 1.6l 97kW Comfort ","Transportation","Shanghai","Dubai",17921.37
+"407","Basic  for 915 sq ft Apartment","Utilities (Monthly)","London","Dubai",162.83
+"408","1 min. of Prepaid Mobile Tariff Local ","Utilities (Monthly)","Sydney","Dubai",0.13
+"409","Internet ","Utilities (Monthly)","Dubai","Dubai",88.03
+"410","Fitness Club Monthly Fee for 1 Adult","Sports And Leisure","Dubai","Dubai",95.2
+"411","Tennis Court Rent ","Sports And Leisure","NYC","Dubai",27.1
+"412","Cinema International Release 1 Seat","Sports And Leisure","Tokyo","Dubai",9.53
+"413","1 Pair of Jeans ","Clothing And Shoes","Paris","Dubai",79.44
+"414","1 Summer Dress in a Chain Store ","Clothing And Shoes","Dubai","Dubai",57.06
+"415","1 Pair of Nike Running Shoes ","Clothing And Shoes","Sydney","Dubai",94.99
+"416","1 Pair of Men Leather Business Shoes","Clothing And Shoes","Paris","Dubai",96.1
+"417","Apartment in City Centre 1 bed","Rent Per Month","NYC","Dubai",2042.52
+"418","Apartment Outside of Centre 1 bed","Rent Per Month","NYC","Dubai",1390.72
+"419","Apartment in City Centre 3 beds","Rent Per Month","NYC","Dubai",4044.48
+"420","Apartment Outside of Centre 3 beds","Rent Per Month","NYC","Dubai",2840.41
+"421","Price per Square Feet to Buy Apartment in City Centre","Buy Apartment Price","London","Dubai",442.29
+"422","Price per Square Feet to Buy Apartment Outside of Centre","Buy Apartment Price","London","Dubai",250.87
+"423","Average Monthly Disposable Salary ","Salaries And Financing","NYC","Dubai",3337.37
+"424","Mortgage Interest Rate in Percentages  Yearly","Salaries And Financing","Shanghai","Dubai",4.16
